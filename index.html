@@ -1,0 +1,586 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DavAI — Privacy Policy</title>
+<style>
+  :root {
+    --blue: #4338CA;
+    --text: #1E293B;
+    --muted: #535F70;
+    --bg: #F8FAFC;
+    --card: #FFFFFF;
+    --border: #E2E8F0;
+    --rule: #CBD5E1;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+  .wrap {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  header {
+    margin-bottom: 8px;
+    border-bottom: 3px solid var(--blue);
+    padding-bottom: 24px;
+  }
+  header .eyebrow {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--blue);
+    margin: 0 0 10px;
+  }
+  header h1 {
+    font-size: 32px;
+    margin: 0 0 14px;
+    color: var(--text);
+  }
+  .doc-meta {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: var(--muted);
+  }
+  .doc-meta table { border-collapse: collapse; }
+  .doc-meta td { padding: 2px 12px 2px 0; vertical-align: top; }
+  .doc-meta td.label { font-weight: 600; color: var(--text); white-space: nowrap; }
+
+  nav.toc {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 32px 0 40px;
+    font-size: 14px;
+  }
+  nav.toc h2 {
+    font-family: inherit;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin: 0 0 10px;
+    border: none;
+    padding: 0;
+  }
+  nav.toc ol {
+    margin: 0;
+    padding-left: 20px;
+    columns: 2;
+    -webkit-columns: 2;
+  }
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+  nav.toc a { color: var(--text); text-decoration: none; }
+  nav.toc a:hover { color: var(--blue); text-decoration: underline; }
+
+  section {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  section:last-of-type { border-bottom: none; }
+  h2 {
+    font-size: 19px;
+    color: var(--text);
+    margin: 0 0 14px;
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+  }
+  h2 .num {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--blue);
+    font-weight: 700;
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 20px 0 8px;
+    color: var(--text);
+  }
+  p { margin: 0 0 14px; }
+  p:last-child { margin-bottom: 0; }
+  ul, ol.clauses { margin: 0 0 14px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  strong { color: var(--text); }
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    margin: 8px 0 16px;
+  }
+  .data-table th, .data-table td {
+    border: 1px solid var(--border);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  .data-table th {
+    background: var(--card);
+    font-weight: 700;
+    color: var(--blue);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .callout {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #EEF2FF;
+    border: 1px solid #C7D2FE;
+    border-radius: 10px;
+    padding: 16px 20px;
+    font-size: 14px;
+    color: #312E81;
+    margin-bottom: 16px;
+  }
+  a { color: var(--blue); }
+  address { font-style: normal; }
+  footer {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #E2E8F0;
+      --muted: #94A3B8;
+      --bg: #0F172A;
+      --card: #1E293B;
+      --border: #334155;
+    }
+    .callout { background: #1E1B4B; border-color: #3730A3; color: #C7D2FE; }
+    .data-table th { background: #1E1B4B; }
+  }
+  @media (max-width: 600px) {
+    nav.toc ol { columns: 1; -webkit-columns: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Legal Document</p>
+    <h1>Privacy Policy</h1>
+    <div class="doc-meta">
+      <table>
+        <tr><td class="label">Application</td><td>DavAI ("the Application")</td></tr>
+        <tr><td class="label">Data Controller</td><td>Arsh Duggal, operating as an independent developer ("the Developer," "we," "us," or "our")</td></tr>
+        <tr><td class="label">Contact</td><td><a href="mailto:arshduggaltv@gmail.com">arshduggaltv@gmail.com</a></td></tr>
+        <tr><td class="label">Effective Date</td><td>July 17, 2026</td></tr>
+        <tr><td class="label">Document Version</td><td>1.1</td></tr>
+      </table>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="Table of contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#s1">Introduction and Acceptance</a></li>
+      <li><a href="#s2">Definitions</a></li>
+      <li><a href="#s3">Information We Collect</a></li>
+      <li><a href="#s4">How We Use Information</a></li>
+      <li><a href="#s5">Legal Basis for Processing</a></li>
+      <li><a href="#s6">Third-Party Service Providers and Disclosure</a></li>
+      <li><a href="#s7">Guardian and Dependent Profiles</a></li>
+      <li><a href="#s8">Data Storage, Retention, and Deletion</a></li>
+      <li><a href="#s9">Data Security</a></li>
+      <li><a href="#s10">Device Permissions</a></li>
+      <li><a href="#s11">Your Rights and Choices</a></li>
+      <li><a href="#s12">International Users</a></li>
+      <li><a href="#s13">Children's Privacy</a></li>
+      <li><a href="#s14">Medical Disclaimer</a></li>
+      <li><a href="#s15">Limitation of Liability</a></li>
+      <li><a href="#s16">Governing Law and Jurisdiction</a></li>
+      <li><a href="#s17">Severability</a></li>
+      <li><a href="#s18">Entire Agreement</a></li>
+      <li><a href="#s19">Changes to This Policy</a></li>
+      <li><a href="#s20">Contact Information</a></li>
+    </ol>
+  </nav>
+
+  <section id="s1">
+    <h2><span class="num">1.</span> Introduction and Acceptance</h2>
+    <p>
+      This Privacy Policy ("Policy") governs the collection, use, storage, and
+      disclosure of information in connection with DavAI (the "Application"),
+      a medication reminder and adherence-tracking application — covering any
+      prescription across any medical specialty — developed and maintained by
+      Arsh Duggal (the "Developer"). By downloading, installing, or using the
+      Application, you ("User," "you") acknowledge that you have read,
+      understood, and agree to be bound by this Policy. If you do not agree
+      with any part of this Policy, you should not use the Application.
+    </p>
+  </section>
+
+  <section id="s2">
+    <h2><span class="num">2.</span> Definitions</h2>
+    <ul>
+      <li><strong>"Application"</strong> means the DavAI mobile software application, in any version, distributed via the Apple App Store or Google Play Store.</li>
+      <li><strong>"Personal Data"</strong> means any information relating to an identified or identifiable natural person.</li>
+      <li><strong>"Profile"</strong> means a named person tracked within the Application on a given Device — either the Device owner ("Self Profile") or someone a User is caring for ("Dependent Profile"), as described in Section 7.</li>
+      <li><strong>"Local Storage"</strong> means data storage located solely on the User's own Device, not transmitted to or accessible by the Developer.</li>
+      <li><strong>"Third-Party Service Provider"</strong> means an independent third-party organization engaged to process specific data on the Developer's behalf, as further described in Section 6.</li>
+      <li><strong>"Device"</strong> means the smartphone, tablet, or other hardware on which the Application is installed.</li>
+    </ul>
+  </section>
+
+  <section id="s3">
+    <h2><span class="num">3.</span> Information We Collect</h2>
+    <p>The Application collects the following categories of information, each described below with its purpose and storage location:</p>
+    <table class="data-table">
+      <tr><th>Category</th><th>Examples</th><th>Collected When</th></tr>
+      <tr><td>Profile identifiers</td><td>The name entered for yourself, and for anyone you add as a dependent</td><td>App setup, and whenever a new profile is added</td></tr>
+      <tr><td>Pairing codes</td><td>A short code associated with each profile, used to identify it for a future cross-device linking feature (see Section 7)</td><td>Profile creation</td></tr>
+      <tr><td>Medication records</td><td>Medicine name, dosage form, frequency, duration, free-text instructions, dose-taken and adherence history</td><td>Manual entry, or extraction from a scanned prescription</td></tr>
+      <tr><td>Missed-dose alert log</td><td>Which dependent, medicine, and scheduled time a missed dose relates to</td><td>Automatically, when a Dependent Profile's dose goes unmarked past its scheduled time</td></tr>
+      <tr><td>Prescription imagery</td><td>A photograph captured or selected by the User, passed through the Developer's scan relay described in Section 6 and not retained by it</td><td>Use of the optional "Scan Prescription" feature</td></tr>
+      <tr><td>Consent record</td><td>Timestamp of acceptance of this Policy</td><td>App setup</td></tr>
+    </table>
+    <p>
+      The Application does not collect analytics identifiers, advertising
+      identifiers, precise or coarse location data, contact lists, biometric
+      data, or any category of information not expressly listed above.
+    </p>
+  </section>
+
+  <section id="s4">
+    <h2><span class="num">4.</span> How We Use Information</h2>
+    <p>Information described in Section 3 is used exclusively for the following purposes:</p>
+    <ul>
+      <li>To display and personalize the Application interface for each profile on the Device;</li>
+      <li>To generate, schedule, and deliver medication reminder notifications;</li>
+      <li>To calculate and display adherence statistics, including completion percentage and streaks;</li>
+      <li>To detect and log a missed dose for a Dependent Profile, and to alert the User on this Device, as described in Section 7;</li>
+      <li>To extract structured medication information from a prescription photograph submitted by the User, via the Third-Party Service Provider described in Section 6.</li>
+    </ul>
+    <p>
+      Information is not used for advertising, is not sold, and is not used
+      to build behavioral or marketing profiles.
+    </p>
+  </section>
+
+  <section id="s5">
+    <h2><span class="num">5.</span> Legal Basis for Processing</h2>
+    <p>
+      Where applicable data protection law requires a legal basis for
+      processing, the Developer relies on: (a) the User's <strong>consent</strong>,
+      obtained via the in-application acceptance step prior to profile setup
+      and prior to any use of the prescription-scanning feature; and (b)
+      <strong>legitimate interest</strong> in operating the core reminder,
+      tracking, and guardian-alert functionality of the Application, which is
+      limited to on-device processing as described in Section 8. Consent for
+      prescription-photo processing may be withdrawn at any time by declining
+      to use the "Scan Prescription" feature; withdrawal does not affect the
+      lawfulness of processing carried out prior to withdrawal.
+    </p>
+  </section>
+
+  <section id="s6">
+    <h2><span class="num">6.</span> Third-Party Service Providers and Disclosure</h2>
+    <div class="callout">
+      When the User submits a prescription photograph via the "Scan
+      Prescription" feature, that image is sent from the User's Device to a
+      relay service the Developer operates (a serverless function hosted on
+      <strong>Cloudflare, Inc.</strong>), which forwards it to
+      <strong>OpenAI, L.L.C.</strong> ("OpenAI") for the sole purpose of
+      extracting structured medication data (name, form, dosage, frequency,
+      and duration), and returns that structured result to the Application.
+      The Developer's relay does not persist, log, or retain the photograph
+      or the extracted data — it exists only to keep the Developer's OpenAI
+      credentials off the User's Device, and the image passes through it
+      transiently, in memory, for the duration of a single request.
+    </div>
+    <p>
+      This transmission constitutes the entirety of data disclosed by the
+      Application to any third party. Per OpenAI's published API data usage
+      terms, data submitted through the API is not used to train OpenAI's
+      models by default, and is subject to
+      <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI's own Privacy Policy</a>,
+      which governs OpenAI's independent processing of that data as a
+      separate data controller for its own retention and security practices.
+      Cloudflare processes the transient request as the Developer's
+      infrastructure provider and is subject to
+      <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's Privacy Policy</a>
+      in that capacity. No API key or credential of any kind is stored on,
+      or ever visible from, the User's Device. Users who wish to minimize the
+      information contained in a submitted photograph may crop or redact
+      portions of a document not necessary for medication extraction (e.g.,
+      full addresses or identification numbers) prior to submission.
+    </p>
+    <p>
+      Other than the disclosure described in this Section, the Developer does
+      not sell, rent, lease, or otherwise disclose Personal Data to any
+      advertiser, data broker, analytics provider, or other third party.
+      The Developer's only server-side component is the transient scan relay
+      described above, which does not store User data; accordingly, no
+      Personal Data is disclosed in connection with a merger, acquisition, or
+      asset transfer, as none is held by the Developer to transfer.
+    </p>
+  </section>
+
+  <section id="s7">
+    <h2><span class="num">7.</span> Guardian and Dependent Profiles</h2>
+    <div class="callout">
+      The Application lets a User add more than one Profile on their Device:
+      their own ("Self Profile"), and one or more people they are caring for
+      ("Dependent Profiles"). This is a <strong>same-device</strong> feature —
+      as of this version, DavAI does not synchronize data between two
+      different Devices. A User acting as a guardian enters and manages a
+      Dependent Profile's medications directly on their own Device; that
+      Device is what receives reminders and missed-dose alerts for that
+      Dependent Profile, because it is the Device on which that data is
+      entered and stored.
+    </div>
+    <p>
+      A pairing code is generated for each Self Profile and required when
+      creating a Dependent Profile, so a guardian must have actually obtained
+      that code from the person they're adding rather than skipping the step.
+      At present, entering that code does not establish a live connection to
+      the other person's own Device or Application instance — no data is
+      transmitted between Devices as a result. The code is checked only for
+      well-formed format on the guardian's Device and stored locally as a
+      label; it is reserved for a future version of the Application that may
+      add real-time cross-device sync, at which point it would be validated
+      against the other Device. If introduced, that capability will be
+      described in an updated version of this Policy before it is enabled.
+    </p>
+    <p>
+      A missed-dose alert (Section 4) for a Dependent Profile is generated
+      and delivered entirely on the guardian's own Device, using that
+      Device's local notification system, and is logged in the Application's
+      Guardian tab on that same Device. No missed-dose data is transmitted to
+      the Developer or to any third party.
+    </p>
+  </section>
+
+  <section id="s8">
+    <h2><span class="num">8.</span> Data Storage, Retention, and Deletion</h2>
+    <p>
+      With the exception of the transient disclosure described in Section 6,
+      all Personal Data described in Section 3 is held in Local Storage on
+      the User's Device only, using the standard application-storage
+      mechanisms provided by the Device's operating system (iOS or Android).
+      This includes data for every Profile on the Device, including Dependent
+      Profiles. Other than the transient scan relay described in Section 6 —
+      which processes a submitted photograph in memory for a single request
+      and retains nothing afterward — the Developer does not operate, and
+      this Application does not transmit data to, any centralized database,
+      cloud-storage service, or backend server under the Developer's control.
+    </p>
+    <p>
+      Data is retained in Local Storage for as long as the Application
+      remains installed on the Device, or until the User deletes a specific
+      Profile or record within the Application. Removing a Profile deletes
+      that Profile's medications, reminders, and any related missed-dose log
+      entries from the Device. Uninstalling the Application permanently and
+      irretrievably deletes all associated Local Storage data in accordance
+      with the Device operating system's standard app-removal behavior.
+      Because the Developer does not retain a separate copy of this data, the
+      Developer has no ability to recover data deleted in this manner, and no
+      residual copy is retained by the Developer following uninstallation.
+    </p>
+  </section>
+
+  <section id="s9">
+    <h2><span class="num">9.</span> Data Security</h2>
+    <p>
+      The Application relies on the security architecture provided by the
+      underlying mobile operating system (iOS or Android) to protect Local
+      Storage, including operating-system-level application sandboxing that
+      prevents other applications from accessing the Application's stored
+      data without authorization. Transmission of a prescription photograph
+      to the Third-Party Service Provider described in Section 6 occurs over
+      an encrypted (HTTPS/TLS) connection. While the Developer takes
+      commercially reasonable steps consistent with these platform
+      protections, no method of electronic storage or transmission is
+      completely secure, and the Developer cannot guarantee absolute
+      security.
+    </p>
+  </section>
+
+  <section id="s10">
+    <h2><span class="num">10.</span> Device Permissions</h2>
+    <h3>10.1 Camera and Photo Library</h3>
+    <p>
+      Requested solely to allow the User to capture or select a prescription
+      image for the scanning feature described in Section 6. This permission
+      may be revoked at any time via Device settings; doing so disables only
+      the scanning feature, and does not otherwise restrict the Application's
+      core functionality of manual medication entry and reminders.
+    </p>
+    <h3>10.2 Notifications</h3>
+    <p>
+      Requested to deliver medication reminder alerts and, for Dependent
+      Profiles, missed-dose alerts. Notification content and scheduling are
+      generated and delivered entirely on-device by the operating system's
+      local notification framework; no reminder or alert data is transmitted
+      to any server in connection with this feature.
+    </p>
+  </section>
+
+  <section id="s11">
+    <h2><span class="num">11.</span> Your Rights and Choices</h2>
+    <p>Because substantially all Personal Data described in this Policy resides in Local Storage under the User's direct and exclusive control, the User is able to exercise the following rights directly within the Application, without contacting the Developer:</p>
+    <ul>
+      <li><strong>Right to access and review</strong> — all stored medication records, across every Profile on the Device, are viewable within the Application at any time.</li>
+      <li><strong>Right to correction</strong> — any medication record may be edited directly within the Application.</li>
+      <li><strong>Right to deletion</strong> — individual medication records, or an entire Profile, may be deleted within the Application; deleting the Application deletes all remaining Local Storage data.</li>
+      <li><strong>Right to withdraw consent</strong> — the User may decline to use the prescription-scanning feature at any time, which prevents any further disclosure under Section 6.</li>
+    </ul>
+    <p>
+      For any request the User is unable to complete directly within the
+      Application, or for questions regarding this Policy, the User may
+      contact the Developer using the details in Section 20.
+    </p>
+  </section>
+
+  <section id="s12">
+    <h2><span class="num">12.</span> International Users</h2>
+    <p>
+      The Application may be downloaded and used by Users located in
+      jurisdictions outside the Developer's home jurisdiction. Because
+      substantially all Personal Data is held in Local Storage on the User's
+      own Device, no cross-border transfer of that data to the Developer
+      occurs. The single exception is the transmission described in Section
+      6, which is processed by OpenAI in accordance with OpenAI's own privacy
+      practices and applicable international data-transfer safeguards as
+      described in OpenAI's Privacy Policy.
+    </p>
+  </section>
+
+  <section id="s13">
+    <h2><span class="num">13.</span> Children's Privacy</h2>
+    <p>
+      The Application is not directed to children under the age of 13 (or
+      the equivalent minimum age in the User's jurisdiction) as Application
+      Users creating their own Self Profile, and the Developer does not
+      knowingly collect Personal Data directly from such individuals. A
+      Dependent Profile may relate to a person of any age, including a
+      minor, where a parent or legal guardian is themselves the User
+      operating the Application on their own Device to manage that minor's
+      medications; in that scenario the parent or guardian remains
+      responsible for the data entered. If a parent or guardian becomes aware
+      that a child has used the Application directly to provide Personal
+      Data about themselves, they may contact the Developer using the
+      details in Section 20 to request deletion; because data is held in
+      Local Storage, deletion may also be accomplished directly by removing
+      the relevant Profile or uninstalling the Application.
+    </p>
+  </section>
+
+  <section id="s14">
+    <h2><span class="num">14.</span> Medical Disclaimer</h2>
+    <p>
+      The Application is a reminder and tracking tool only. It is not a
+      medical device, is not intended to diagnose, treat, cure, or prevent
+      any disease or condition, and does not constitute medical advice.
+      Information extracted by the artificial-intelligence scanning feature
+      described in Section 6 may contain errors, omissions, or
+      misinterpretations, regardless of medical specialty. The User is solely
+      responsible for verifying all medication information — for themselves
+      and for any Dependent Profile they manage — against the actual
+      prescription, and for consulting a licensed physician or pharmacist
+      with any questions regarding medication or treatment.
+    </p>
+  </section>
+
+  <section id="s15">
+    <h2><span class="num">15.</span> Limitation of Liability</h2>
+    <p>
+      The Application is provided "AS IS" and "AS AVAILABLE," without
+      warranty of any kind, whether express, implied, or statutory,
+      including without limitation any implied warranties of
+      merchantability, fitness for a particular purpose, or non-infringement.
+      Without limiting the foregoing, the User acknowledges and agrees that:
+    </p>
+    <ol class="clauses">
+      <li>reminder and missed-dose alert notifications may be delayed, suppressed, or fail to appear due to Device operating-system behavior, network conditions, or other factors outside the Developer's control;</li>
+      <li>a guardian relying on the Application to be alerted about a Dependent Profile's missed dose does so entirely at their own risk, and the Application is not a substitute for direct, in-person care or supervision;</li>
+      <li>the artificial-intelligence-based scanning feature may misread, omit, or incorrectly interpret medication names, dosages, frequencies, or instructions;</li>
+      <li>the User bears sole responsibility for verifying all medication information and for all dosing decisions made in reliance, in whole or in part, on the Application, whether for themselves or for a Dependent Profile;</li>
+      <li>to the fullest extent permitted by applicable law, the Developer disclaims all liability for any injury, harm, missed or incorrect dosing, adverse medical outcome, financial loss, or other damage of any kind arising out of or in connection with use of, or inability to use, the Application, including any claim characterized as medical, legal, or medicolegal in nature; and</li>
+      <li>the Application is not intended for use in, and must not be relied upon during, a medical emergency; a User experiencing a medical emergency, or caring for a Dependent experiencing one, must contact local emergency services or a qualified healthcare provider directly.</li>
+    </ol>
+  </section>
+
+  <section id="s16">
+    <h2><span class="num">16.</span> Governing Law and Jurisdiction</h2>
+    <p>
+      This Policy shall be governed by and construed in accordance with the
+      laws of India, without regard to its conflict of law principles. Any
+      dispute, controversy, or claim arising out of or relating to this
+      Policy, or the collection, use, or disclosure of information described
+      herein, shall be subject to the exclusive jurisdiction of the competent
+      courts of India. Nothing in this Section limits any mandatory
+      consumer-protection or data-protection rights the User may hold under
+      the law of their own place of residence that cannot be waived by
+      agreement.
+    </p>
+  </section>
+
+  <section id="s17">
+    <h2><span class="num">17.</span> Severability</h2>
+    <p>
+      If any provision of this Policy is held by a court or other tribunal of
+      competent jurisdiction to be invalid, illegal, or unenforceable, such
+      provision shall be modified to the minimum extent necessary to make it
+      valid, legal, and enforceable, or, if it cannot be so modified, shall
+      be severed from this Policy, and the remaining provisions shall
+      continue in full force and effect.
+    </p>
+  </section>
+
+  <section id="s18">
+    <h2><span class="num">18.</span> Entire Agreement</h2>
+    <p>
+      This Policy, together with any in-application disclosures presented at
+      setup, constitutes the entire agreement between the User and the
+      Developer regarding the collection, use, and disclosure of information
+      in connection with the Application, and supersedes any prior
+      understanding on that subject.
+    </p>
+  </section>
+
+  <section id="s19">
+    <h2><span class="num">19.</span> Changes to This Policy</h2>
+    <p>
+      The Developer may revise this Policy from time to time — for example,
+      if a future version of the Application introduces real cross-device
+      synchronization for Guardian and Dependent Profiles as noted in Section
+      7. Any revision will be reflected by an updated Effective Date and
+      Document Version shown at the top of this page. Material changes
+      affecting how previously collected data is used will, where
+      practicable, be accompanied by a notice within the Application.
+      Continued use of the Application following the posting of a revised
+      Policy constitutes acceptance of that revision.
+    </p>
+  </section>
+
+  <section id="s20">
+    <h2><span class="num">20.</span> Contact Information</h2>
+    <p>Questions, requests, or concerns regarding this Policy or the handling of your information should be directed to:</p>
+    <address>
+      Arsh Duggal (Developer, DavAI)<br>
+      Email: <a href="mailto:arshduggaltv@gmail.com">arshduggaltv@gmail.com</a>
+    </address>
+  </section>
+
+  <footer>DavAI — Privacy Policy — Version 1.1 — Effective July 17, 2026</footer>
+</div>
+</body>
+</html>

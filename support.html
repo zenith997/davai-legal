@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DavAI — Support</title>
+<style>
+  :root {
+    --blue: #4338CA;
+    --text: #1E293B;
+    --muted: #535F70;
+    --bg: #F8FAFC;
+    --card: #FFFFFF;
+    --border: #E2E8F0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+  }
+  header h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+    color: var(--blue);
+  }
+  header p.meta {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0 0 32px;
+  }
+  section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 18px;
+    color: var(--blue);
+    margin: 0 0 12px;
+  }
+  p { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--blue); }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #E2E8F0;
+      --muted: #94A3B8;
+      --bg: #0F172A;
+      --card: #1E293B;
+      --border: #334155;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>DavAI — Support</h1>
+    <p class="meta">Need help? We're here.</p>
+  </header>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      For questions, bug reports, or feedback about DavAI, email
+      <a href="mailto:arshduggaltv@gmail.com">arshduggaltv@gmail.com</a>.
+      We aim to respond within a few days.
+    </p>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>Why can't I mark a dose as taken?</strong><br>
+    Doses are time-locked to keep your adherence history accurate — you can't
+    mark a dose taken before its scheduled time. The reminder card shows you
+    exactly when it unlocks.</p>
+    <p><strong>Where is my data stored?</strong><br>
+    Entirely on your device. DavAI doesn't have user accounts or cloud sync.
+    See our <a href="./">Privacy Policy</a> for full details.</p>
+    <p><strong>How does the Guardian feature work?</strong><br>
+    You can add a profile for someone you're caring for and manage their
+    medications directly from your own phone — that's the device that gets
+    reminders and missed-dose alerts for them. Live syncing between two
+    separate devices (e.g. so a dependent's own phone can notify you) isn't
+    available yet; today the pairing code is a label reserved for that future
+    version.</p>
+    <p><strong>Why does a "missed dose" alert show up for someone I'm caring for?</strong><br>
+    If a dependent's dose is still unmarked a while after its scheduled time,
+    DavAI logs it in the Guardian tab and sends a notification on your
+    device, since that's where you're tracking their medications.</p>
+    <p><strong>The AI scanner misread my prescription — what do I do?</strong><br>
+    Tap any medication in the review screen to correct the name, form,
+    dosage, frequency, or duration before saving. You can also add
+    medications manually from the same screen.</p>
+    <p><strong>The scanner says my API key is missing or invalid.</strong><br>
+    Prescription scanning uses your own OpenAI API key, entered in Settings.
+    Double-check the key is correct and has available quota on your OpenAI
+    account. You can always add medications manually instead.</p>
+    <p><strong>Notifications aren't showing up.</strong><br>
+    Check that notifications are allowed for DavAI in your device's Settings
+    app, and that Do Not Disturb / Focus modes aren't silencing them.</p>
+  </section>
+
+  <section>
+    <h2>Legal</h2>
+    <p><a href="./">Privacy Policy</a></p>
+  </section>
+</div>
+</body>
+</html>
