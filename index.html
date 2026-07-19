@@ -179,10 +179,10 @@
     <div class="doc-meta">
       <table>
         <tr><td class="label">Application</td><td>DavAI ("the Application")</td></tr>
-        <tr><td class="label">Data Controller</td><td>Arsh Duggal, operating as an independent developer ("the Developer," "we," "us," or "our")</td></tr>
+        <tr><td class="label">Data Fiduciary / Data Controller</td><td>Arsh Duggal, operating as an independent developer ("the Developer," "we," "us," or "our")</td></tr>
         <tr><td class="label">Contact</td><td><a href="mailto:davai.pvt.ltd@gmail.com">davai.pvt.ltd@gmail.com</a></td></tr>
-        <tr><td class="label">Effective Date</td><td>July 17, 2026</td></tr>
-        <tr><td class="label">Document Version</td><td>1.2</td></tr>
+        <tr><td class="label">Effective Date</td><td>July 19, 2026</td></tr>
+        <tr><td class="label">Document Version</td><td>1.3</td></tr>
       </table>
     </div>
   </header>
@@ -201,15 +201,18 @@
       <li><a href="#s9">Data Security</a></li>
       <li><a href="#s10">Device Permissions</a></li>
       <li><a href="#s11">Your Rights and Choices</a></li>
-      <li><a href="#s12">International Users</a></li>
-      <li><a href="#s13">Children's Privacy</a></li>
-      <li><a href="#s14">Medical Disclaimer</a></li>
-      <li><a href="#s15">Limitation of Liability</a></li>
-      <li><a href="#s16">Governing Law and Jurisdiction</a></li>
-      <li><a href="#s17">Severability</a></li>
-      <li><a href="#s18">Entire Agreement</a></li>
-      <li><a href="#s19">Changes to This Policy</a></li>
-      <li><a href="#s20">Contact Information</a></li>
+      <li><a href="#s12">Right to Nominate</a></li>
+      <li><a href="#s13">Grievance Redressal</a></li>
+      <li><a href="#s14">Personal Data Breach Notification</a></li>
+      <li><a href="#s15">International Users and Cross-Border Transfer</a></li>
+      <li><a href="#s16">Children's Privacy</a></li>
+      <li><a href="#s17">Medical Disclaimer</a></li>
+      <li><a href="#s18">Limitation of Liability</a></li>
+      <li><a href="#s19">Governing Law and Jurisdiction</a></li>
+      <li><a href="#s20">Severability</a></li>
+      <li><a href="#s21">Entire Agreement</a></li>
+      <li><a href="#s22">Changes to This Policy</a></li>
+      <li><a href="#s23">Contact Information</a></li>
     </ol>
   </nav>
 
@@ -220,10 +223,13 @@
       disclosure of information in connection with DavAI (the "Application"),
       a medication reminder and adherence-tracking application — covering any
       prescription across any medical specialty — developed and maintained by
-      Arsh Duggal (the "Developer"). By downloading, installing, or using the
-      Application, you ("User," "you") acknowledge that you have read,
-      understood, and agree to be bound by this Policy. If you do not agree
-      with any part of this Policy, you should not use the Application.
+      Arsh Duggal (the "Developer"). The Developer is based in India, and this
+      Policy is intended to align with India's Digital Personal Data
+      Protection Act, 2023 ("DPDPA") and its rules, in addition to describing
+      the Developer's practices generally. By downloading, installing, or
+      using the Application, you ("User," "you") acknowledge that you have
+      read, understood, and agree to be bound by this Policy. If you do not
+      agree with any part of this Policy, you should not use the Application.
     </p>
   </section>
 
@@ -231,7 +237,10 @@
     <h2><span class="num">2.</span> Definitions</h2>
     <ul>
       <li><strong>"Application"</strong> means the DavAI mobile software application, in any version, distributed via the Apple App Store or Google Play Store.</li>
-      <li><strong>"Personal Data"</strong> means any information relating to an identified or identifiable natural person.</li>
+      <li><strong>"Personal Data"</strong> means any information relating to an identified or identifiable natural person; this corresponds to "personal data" as defined under the DPDPA.</li>
+      <li><strong>"Data Fiduciary"</strong> means the Developer, in its capacity as the entity that determines the purpose and means of processing Personal Data under the Application, as that term is used in the DPDPA. This is the same role referred to elsewhere in this Policy as "Data Controller."</li>
+      <li><strong>"Data Principal"</strong> means the individual to whom the Personal Data relates, as that term is used in the DPDPA — referred to elsewhere in this Policy as the "User."</li>
+      <li><strong>"Nominee"</strong> means a person a Data Principal may designate to exercise their rights under the DPDPA in the event of the Data Principal's death or incapacity, as described in Section 12.</li>
       <li><strong>"Profile"</strong> means a named person tracked within the Application on a given Device — either the Device owner ("Self Profile") or someone a User is caring for ("Dependent Profile"), as described in Section 7.</li>
       <li><strong>"Local Storage"</strong> means data storage located solely on the User's own Device, not transmitted to or accessible by the Developer.</li>
       <li><strong>"Third-Party Service Provider"</strong> means an independent third-party organization engaged to process specific data on the Developer's behalf, as further described in Section 6.</li>
@@ -247,7 +256,7 @@
       <tr><td>Profile identifiers</td><td>The name entered for yourself, and for anyone you add as a dependent</td><td>App setup, and whenever a new profile is added</td></tr>
       <tr><td>Pairing codes</td><td>A short code associated with each profile, used to link a guardian's Device to the Self Profile they're watching (see Section 7)</td><td>Profile creation</td></tr>
       <tr><td>Medication records</td><td>Medicine name, dosage form, frequency, duration, free-text instructions, and daily dose-taken status</td><td>Manual entry, or extraction from a scanned prescription; a Self Profile's current medication list syncs to the Developer's server (Section 7) if any guardian is watching it</td></tr>
-      <tr><td>Push notification token</td><td>A device identifier issued by Apple, used only to deliver a missed-dose alert to a guardian's Device</td><td>When a Device is set up to watch a Self Profile as a guardian</td></tr>
+      <tr><td>Push notification token</td><td>A device identifier issued by Apple (iOS Devices) or obtained via Google's Firebase Cloud Messaging service (Android Devices), used only to deliver a missed-dose alert to a guardian's Device</td><td>When a Device is set up to watch a Self Profile as a guardian</td></tr>
       <tr><td>Missed-dose alert log</td><td>Which profile, medicine, and date a missed dose relates to</td><td>Automatically, when a watched Self Profile's dose goes unmarked 30+ minutes past its scheduled time</td></tr>
       <tr><td>Prescription imagery</td><td>A photograph captured or selected by the User, passed through the Developer's scan relay described in Section 6 and not retained by it</td><td>Use of the optional "Scan Prescription" feature</td></tr>
       <tr><td>Consent record</td><td>Timestamp of acceptance of this Policy</td><td>App setup</td></tr>
@@ -267,11 +276,13 @@
       <li>To generate, schedule, and deliver medication reminder notifications;</li>
       <li>To calculate and display adherence statistics, including completion percentage and streaks;</li>
       <li>To detect and log a missed dose for a Dependent Profile, and to alert the User on this Device, as described in Section 7;</li>
-      <li>To extract structured medication information from a prescription photograph submitted by the User, via the Third-Party Service Provider described in Section 6.</li>
+      <li>To extract structured medication information from a prescription photograph submitted by the User, via the Third-Party Service Provider described in Section 6, including flagging any reading the AI was not confident in so the User can verify it before relying on it.</li>
     </ul>
     <p>
       Information is not used for advertising, is not sold, and is not used
-      to build behavioral or marketing profiles.
+      to build behavioral or marketing profiles. The Application does not
+      track Users — including child Users, see Section 16 — across other
+      apps or websites for any purpose.
     </p>
   </section>
 
@@ -279,17 +290,22 @@
     <h2><span class="num">5.</span> Legal Basis for Processing</h2>
     <p>
       Where applicable data protection law requires a legal basis for
-      processing, the Developer relies on: (a) the User's <strong>consent</strong>,
-      obtained via the in-application acceptance step prior to profile setup
-      and prior to any use of the prescription-scanning feature; and (b)
-      <strong>legitimate interest</strong> in operating the core reminder,
-      tracking, and guardian-alert functionality of the Application, as
-      described in Sections 7 and 8. Consent for prescription-photo
-      processing, and separately for guardian cross-device sync, may each be
-      withdrawn at any time — the former by declining to use the "Scan
-      Prescription" feature, the latter by removing the relevant Profile or
-      guardian link — without affecting the lawfulness of processing carried
-      out prior to withdrawal.
+      processing, the Developer relies on: (a) the Data Principal's
+      <strong>consent</strong>, obtained via the in-application acceptance
+      step prior to profile setup and prior to any use of the
+      prescription-scanning feature, consistent with the DPDPA's requirement
+      that consent be free, specific, informed, unconditional, and
+      unambiguous, given through a clear affirmative action; and (b)
+      <strong>legitimate interest</strong> (referred to under the DPDPA as a
+      "legitimate use" in certain circumstances) in operating the core
+      reminder, tracking, and guardian-alert functionality of the
+      Application, as described in Sections 7 and 8. Consent for
+      prescription-photo processing, and separately for guardian
+      cross-device sync, may each be withdrawn at any time — the former by
+      declining to use the "Scan Prescription" feature, the latter by
+      removing the relevant Profile or guardian link — as easily as it was
+      given, without affecting the lawfulness of processing carried out
+      prior to withdrawal.
     </p>
   </section>
 
@@ -302,11 +318,15 @@
       <strong>Cloudflare, Inc.</strong>), which forwards it to
       <strong>OpenAI, L.L.C.</strong> ("OpenAI") for the sole purpose of
       extracting structured medication data (name, form, dosage, frequency,
-      and duration), and returns that structured result to the Application.
-      The Developer's relay does not persist, log, or retain the photograph
-      or the extracted data — it exists only to keep the Developer's OpenAI
-      credentials off the User's Device, and the image passes through it
-      transiently, in memory, for the duration of a single request.
+      and duration). The Developer's relay does not persist, log, or retain
+      the photograph or the extracted data — it exists only to keep the
+      Developer's OpenAI credentials off the User's Device, and the image
+      passes through it transiently, in memory, for the duration of a single
+      request. Separately, if a User is watched by a guardian, a missed-dose
+      push notification is delivered via <strong>Apple Inc.</strong>'s Push
+      Notification service (iOS guardians) or <strong>Google LLC</strong>'s
+      Firebase Cloud Messaging service (Android guardians), as described in
+      Section 7.
     </div>
     <p>
       This transmission constitutes the entirety of data disclosed by the
@@ -316,22 +336,24 @@
       <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">OpenAI's own Privacy Policy</a>,
       which governs OpenAI's independent processing of that data as a
       separate data controller for its own retention and security practices.
-      Cloudflare processes the transient request as the Developer's
+      Cloudflare processes the transient scan request, and the persistent
+      guardian-sync dataset described in Section 8, as the Developer's
       infrastructure provider and is subject to
       <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">Cloudflare's Privacy Policy</a>
-      in that capacity. No API key or credential of any kind is stored on,
-      or ever visible from, the User's Device. Users who wish to minimize the
-      information contained in a submitted photograph may crop or redact
-      portions of a document not necessary for medication extraction (e.g.,
-      full addresses or identification numbers) prior to submission.
+      in that capacity. Google processes an Android guardian Device's push
+      token and the missed-dose alert content solely to deliver that
+      notification, subject to
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.
+      No API key or credential of any kind is stored on, or ever visible
+      from, the User's Device. Users who wish to minimize the information
+      contained in a submitted photograph may crop or redact portions of a
+      document not necessary for medication extraction (e.g., full addresses
+      or identification numbers) prior to submission.
     </p>
     <p>
-      Other than the disclosure described in this Section, and the guardian
-      cross-device sync described in Section 7 (which also runs on
-      Cloudflare infrastructure, but persists data rather than processing it
-      transiently), the Developer does not sell, rent, lease, or otherwise
-      disclose Personal Data to any advertiser, data broker, analytics
-      provider, or other third party.
+      Other than the disclosures described in this Section, the Developer
+      does not sell, rent, lease, or otherwise disclose Personal Data to any
+      advertiser, data broker, analytics provider, or other third party.
     </p>
   </section>
 
@@ -366,15 +388,18 @@
     </p>
     <p>
       To deliver a missed-dose push notification, a guardian's Device
-      registers an Apple-issued push notification token with the Developer's
-      server, associated only with the pairing code they're watching. The
-      server checks, on a recurring automated schedule, whether any watched
-      Profile has a dose that has gone unmarked 30 or more minutes past its
-      scheduled time; if so, it sends a notification directly to Apple's
-      Push Notification service, which delivers it to the guardian's Device.
-      This check-and-alert log (which profile, medicine, and date — not the
-      medication list itself) is retained on the server so the guardian's
-      Application can display a short history of past alerts.
+      registers a platform push-notification token — issued by Apple for
+      iOS Devices, or obtained via Google's Firebase Cloud Messaging service
+      for Android Devices — with the Developer's server, associated only
+      with the pairing code they're watching. The server checks, on a
+      recurring automated schedule, whether any watched Profile has a dose
+      that has gone unmarked 30 or more minutes past its scheduled time; if
+      so, it sends the notification directly to Apple's Push Notification
+      service or Google's Firebase Cloud Messaging service, as applicable
+      to the guardian's Device, which delivers it. This check-and-alert log
+      (which profile, medicine, and date — not the medication list itself)
+      is retained on the server so the guardian's Application can display a
+      short history of past alerts.
     </p>
     <p>
       A User may remove a guardian link (or a Self Profile may stop syncing)
@@ -434,12 +459,14 @@
       Storage, including operating-system-level application sandboxing that
       prevents other applications from accessing the Application's stored
       data without authorization. Transmission of a prescription photograph
-      to the Third-Party Service Provider described in Section 6 occurs over
-      an encrypted (HTTPS/TLS) connection. While the Developer takes
-      commercially reasonable steps consistent with these platform
-      protections, no method of electronic storage or transmission is
-      completely secure, and the Developer cannot guarantee absolute
-      security.
+      to the Third-Party Service Provider described in Section 6, and of the
+      guardian-sync dataset described in Section 8, occurs over an encrypted
+      (HTTPS/TLS) connection. While the Developer takes commercially
+      reasonable steps consistent with these platform protections, and with
+      the DPDPA's requirement to implement reasonable security safeguards to
+      prevent a personal data breach, no method of electronic storage or
+      transmission is completely secure, and the Developer cannot guarantee
+      absolute security.
     </p>
   </section>
 
@@ -462,7 +489,7 @@
       connection with this purpose. Second, on a Device set up as a
       guardian, to receive a missed-dose push notification from the
       Developer's server as described in Section 7; this requires the
-      Device's Apple-issued push token to be registered with that server, as
+      Device's platform push token to be registered with that server, as
       disclosed in Sections 3 and 7. Revoking notification permission stops
       both reminder display and push delivery, but does not otherwise
       restrict the Application's core functionality.
@@ -471,74 +498,166 @@
 
   <section id="s11">
     <h2><span class="num">11.</span> Your Rights and Choices</h2>
-    <p>Because substantially all Personal Data described in this Policy resides in Local Storage under the User's direct and exclusive control, the User is able to exercise the following rights directly within the Application, without contacting the Developer:</p>
+    <p>
+      As a Data Principal under the DPDPA, and because substantially all
+      Personal Data described in this Policy resides in Local Storage under
+      the User's direct and exclusive control, the User is able to exercise
+      the following rights, most of them directly within the Application
+      without contacting the Developer:
+    </p>
     <ul>
-      <li><strong>Right to access and review</strong> — all stored medication records, across every Profile on the Device, are viewable within the Application at any time.</li>
-      <li><strong>Right to correction</strong> — any medication record may be edited directly within the Application.</li>
-      <li><strong>Right to deletion</strong> — individual medication records, or an entire Profile, may be deleted within the Application; deleting the Application deletes all remaining Local Storage data.</li>
-      <li><strong>Right to withdraw consent</strong> — the User may decline to use the prescription-scanning feature at any time, which prevents any further disclosure under Section 6.</li>
+      <li><strong>Right to access information</strong> — a summary of the Personal Data processed about you, and this Policy, is available to you at any time; all stored medication records, across every Profile on the Device, are directly viewable within the Application.</li>
+      <li><strong>Right to correction and erasure</strong> — any medication record may be edited or deleted directly within the Application; an entire Profile may be removed, which also deletes its synced guardian-sync copy from the Developer's server as described in Section 8.</li>
+      <li><strong>Right to grievance redressal</strong> — described in Section 13.</li>
+      <li><strong>Right to nominate</strong> — described in Section 12.</li>
+      <li><strong>Right to withdraw consent</strong> — the User may decline to use the prescription-scanning feature, or remove a guardian link, at any time, which prevents any further disclosure under Section 6.</li>
     </ul>
     <p>
       For any request the User is unable to complete directly within the
       Application, or for questions regarding this Policy, the User may
-      contact the Developer using the details in Section 20.
+      contact the Developer using the details in Section 23.
     </p>
   </section>
 
   <section id="s12">
-    <h2><span class="num">12.</span> International Users</h2>
+    <h2><span class="num">12.</span> Right to Nominate</h2>
     <p>
-      The Application may be downloaded and used by Users located in
-      jurisdictions outside the Developer's home jurisdiction. Substantially
-      all Personal Data is held in Local Storage on the User's own Device,
-      with two exceptions: the transmission described in Section 6, processed
-      by OpenAI in accordance with OpenAI's own privacy practices and
-      applicable international data-transfer safeguards as described in
-      OpenAI's Privacy Policy; and the guardian cross-device sync described in
-      Section 7, processed by Cloudflare on its global network in accordance
-      with Cloudflare's own privacy practices and data-transfer safeguards as
-      described in Cloudflare's Privacy Policy.
+      Under the DPDPA, a Data Principal has the right to nominate another
+      individual to exercise their rights under the Act on their behalf in
+      the event of the Data Principal's death or incapacity. Because the
+      Application does not operate an account or sign-in system, this
+      nomination is handled outside the Application: a User who wishes to
+      designate a Nominee may do so by writing to the Developer at the
+      contact details in Section 23 with the Nominee's identity and contact
+      information. On reasonable verification of the Nominee's identity and
+      of the circumstances (the Data Principal's death or incapacity), the
+      Developer will treat requests from that Nominee as if made by the Data
+      Principal, solely with respect to the Personal Data described in this
+      Policy.
+    </p>
+    <p>
+      This mechanism is distinct from, and not a substitute for, the
+      Application's in-product Guardian feature described in Section 7. The
+      Guardian feature is a live medication-monitoring feature a User sets
+      up voluntarily while active and able to do so themselves, and linking
+      a guardian does not itself grant that guardian any rights over the
+      User's Personal Data or account under this Policy or the DPDPA.
     </p>
   </section>
 
   <section id="s13">
-    <h2><span class="num">13.</span> Children's Privacy</h2>
+    <h2><span class="num">13.</span> Grievance Redressal</h2>
     <p>
-      The Application is not directed to children under the age of 13 (or
-      the equivalent minimum age in the User's jurisdiction) as Application
-      Users creating their own Self Profile, and the Developer does not
-      knowingly collect Personal Data directly from such individuals. A
-      Dependent Profile may relate to a person of any age, including a
-      minor, where a parent or legal guardian is themselves the User
-      operating the Application on their own Device to manage that minor's
-      medications; in that scenario the parent or guardian remains
-      responsible for the data entered. If a parent or guardian becomes aware
-      that a child has used the Application directly to provide Personal
-      Data about themselves, they may contact the Developer using the
-      details in Section 20 to request deletion; because data is held in
+      In accordance with the DPDPA, the Developer has designated the contact
+      details in Section 23 as the point of contact for grievances regarding
+      the processing of Personal Data under the Application. A Data
+      Principal may submit a grievance by email; the Developer will
+      acknowledge receipt and endeavor to resolve the grievance within a
+      reasonable time, and in any event within the period prescribed under
+      the DPDP Rules. If a Data Principal's grievance is not resolved to
+      their satisfaction, they may escalate the matter to the Data
+      Protection Board of India, established under the DPDPA, or to any
+      other competent authority.
+    </p>
+  </section>
+
+  <section id="s14">
+    <h2><span class="num">14.</span> Personal Data Breach Notification</h2>
+    <p>
+      In the event of a personal data breach affecting Personal Data
+      processed by the Developer — practically, this means the guardian-sync
+      dataset described in Section 8, since substantially all other Personal
+      Data never leaves the User's Device and so is not something the
+      Developer could breach — the Developer will notify the Data Protection
+      Board of India and affected Data Principals in the manner and within
+      the time prescribed under the DPDPA and the DPDP Rules. Because Local
+      Storage data resides solely on the User's own Device under the User's
+      control, the Developer has no visibility into, and bears no
+      notification obligation for, a compromise of a Device itself (e.g.,
+      loss, theft, or malware) — Users should follow their Device
+      manufacturer's guidance for securing a lost or stolen Device.
+    </p>
+  </section>
+
+  <section id="s15">
+    <h2><span class="num">15.</span> International Users and Cross-Border Transfer</h2>
+    <p>
+      The Application may be downloaded and used by Users located in
+      jurisdictions outside the Developer's home jurisdiction. Substantially
+      all Personal Data is held in Local Storage on the User's own Device,
+      with three exceptions: the transmission described in Section 6,
+      processed by OpenAI; the guardian cross-device sync described in
+      Section 7, processed by Cloudflare on its global network; and, for
+      Android guardians, push delivery via Google's Firebase Cloud
+      Messaging service — each in accordance with that provider's own
+      privacy practices and applicable international data-transfer
+      safeguards as described in its respective privacy policy (linked in
+      Section 6).
+    </p>
+    <p>
+      Under the DPDPA's cross-border transfer regime, transfer of Personal
+      Data outside India is permitted by default, except to a country or
+      territory the Central Government of India has specifically restricted
+      by notification. As of the Effective Date of this Policy, no such
+      restriction applies to the jurisdictions in which OpenAI, Cloudflare,
+      or Google process data as described in this Policy.
+    </p>
+  </section>
+
+  <section id="s16">
+    <h2><span class="num">16.</span> Children's Privacy</h2>
+    <p>
+      The DPDPA defines a "child" as an individual under the age of 18 and
+      requires verifiable consent from a parent or lawful guardian before
+      processing a child's Personal Data, and separately prohibits
+      processing that involves tracking, behavioral monitoring, or targeted
+      advertising directed at children. The Application does not track,
+      behaviorally monitor for advertising purposes, or serve targeted
+      advertising to any User of any age, so that prohibition is satisfied
+      by the Application's design regardless of age.
+    </p>
+    <p>
+      The Application's Self Profile setup is intended for use by an
+      individual capable of providing consent to this Policy in their own
+      right, and the Developer does not knowingly permit a child under 18 to
+      create a Self Profile and accept this Policy in their own name. A
+      minor's medication information may instead be entered and managed by
+      their parent or lawful guardian, acting as the User, via a Dependent
+      Profile the parent or guardian themselves operates on their own
+      Device — in which case the parent or guardian's own acceptance of this
+      Policy, together with their exercise of parental or guardian authority
+      in choosing to enter that minor's data, is the basis on which that
+      data is processed. A parent or lawful guardian may withdraw consent at
+      any time by removing the relevant Profile, which deletes that minor's
+      data as described in Section 8. If a parent or lawful guardian
+      believes a child has independently created a Self Profile and provided
+      Personal Data about themselves, they may contact the Developer using
+      the details in Section 23 to request deletion; because data is held in
       Local Storage, deletion may also be accomplished directly by removing
       the relevant Profile or uninstalling the Application.
     </p>
   </section>
 
-  <section id="s14">
-    <h2><span class="num">14.</span> Medical Disclaimer</h2>
+  <section id="s17">
+    <h2><span class="num">17.</span> Medical Disclaimer</h2>
     <p>
       The Application is a reminder and tracking tool only. It is not a
       medical device, is not intended to diagnose, treat, cure, or prevent
       any disease or condition, and does not constitute medical advice.
       Information extracted by the artificial-intelligence scanning feature
       described in Section 6 may contain errors, omissions, or
-      misinterpretations, regardless of medical specialty. The User is solely
-      responsible for verifying all medication information — for themselves
-      and for any Dependent Profile they manage — against the actual
-      prescription, and for consulting a licensed physician or pharmacist
-      with any questions regarding medication or treatment.
+      misinterpretations, regardless of medical specialty — the feature
+      flags readings it was not confident in, but even an unflagged reading
+      is not guaranteed correct. The User is solely responsible for
+      verifying all medication information — for themselves and for any
+      Dependent Profile they manage — against the actual prescription, and
+      for consulting a licensed physician or pharmacist with any questions
+      regarding medication or treatment.
     </p>
   </section>
 
-  <section id="s15">
-    <h2><span class="num">15.</span> Limitation of Liability</h2>
+  <section id="s18">
+    <h2><span class="num">18.</span> Limitation of Liability</h2>
     <p>
       The Application is provided "AS IS" and "AS AVAILABLE," without
       warranty of any kind, whether express, implied, or statutory,
@@ -549,30 +668,32 @@
     <ol class="clauses">
       <li>reminder and missed-dose alert notifications may be delayed, suppressed, or fail to appear due to Device operating-system behavior, network conditions, or other factors outside the Developer's control;</li>
       <li>a guardian relying on the Application to be alerted about a Dependent Profile's missed dose does so entirely at their own risk, and the Application is not a substitute for direct, in-person care or supervision;</li>
-      <li>the artificial-intelligence-based scanning feature may misread, omit, or incorrectly interpret medication names, dosages, frequencies, or instructions;</li>
+      <li>the artificial-intelligence-based scanning feature may misread, omit, or incorrectly interpret medication names, dosages, frequencies, or instructions, even where it has not flagged that reading for review;</li>
       <li>the User bears sole responsibility for verifying all medication information and for all dosing decisions made in reliance, in whole or in part, on the Application, whether for themselves or for a Dependent Profile;</li>
       <li>to the fullest extent permitted by applicable law, the Developer disclaims all liability for any injury, harm, missed or incorrect dosing, adverse medical outcome, financial loss, or other damage of any kind arising out of or in connection with use of, or inability to use, the Application, including any claim characterized as medical, legal, or medicolegal in nature; and</li>
       <li>the Application is not intended for use in, and must not be relied upon during, a medical emergency; a User experiencing a medical emergency, or caring for a Dependent experiencing one, must contact local emergency services or a qualified healthcare provider directly.</li>
     </ol>
   </section>
 
-  <section id="s16">
-    <h2><span class="num">16.</span> Governing Law and Jurisdiction</h2>
+  <section id="s19">
+    <h2><span class="num">19.</span> Governing Law and Jurisdiction</h2>
     <p>
       This Policy shall be governed by and construed in accordance with the
-      laws of India, without regard to its conflict of law principles. Any
-      dispute, controversy, or claim arising out of or relating to this
-      Policy, or the collection, use, or disclosure of information described
-      herein, shall be subject to the exclusive jurisdiction of the competent
-      courts of India. Nothing in this Section limits any mandatory
-      consumer-protection or data-protection rights the User may hold under
-      the law of their own place of residence that cannot be waived by
-      agreement.
+      laws of India, including the DPDPA, without regard to conflict of law
+      principles. Any dispute, controversy, or claim arising out of or
+      relating to this Policy, or the collection, use, or disclosure of
+      information described herein, shall be subject to the exclusive
+      jurisdiction of the competent courts of India, without prejudice to a
+      Data Principal's right to approach the Data Protection Board of India
+      as described in Section 13. Nothing in this Section limits any
+      mandatory consumer-protection or data-protection rights the User may
+      hold under the law of their own place of residence that cannot be
+      waived by agreement.
     </p>
   </section>
 
-  <section id="s17">
-    <h2><span class="num">17.</span> Severability</h2>
+  <section id="s20">
+    <h2><span class="num">20.</span> Severability</h2>
     <p>
       If any provision of this Policy is held by a court or other tribunal of
       competent jurisdiction to be invalid, illegal, or unenforceable, such
@@ -583,8 +704,8 @@
     </p>
   </section>
 
-  <section id="s18">
-    <h2><span class="num">18.</span> Entire Agreement</h2>
+  <section id="s21">
+    <h2><span class="num">21.</span> Entire Agreement</h2>
     <p>
       This Policy, together with any in-application disclosures presented at
       setup, constitutes the entire agreement between the User and the
@@ -594,8 +715,8 @@
     </p>
   </section>
 
-  <section id="s19">
-    <h2><span class="num">19.</span> Changes to This Policy</h2>
+  <section id="s22">
+    <h2><span class="num">22.</span> Changes to This Policy</h2>
     <p>
       The Developer may revise this Policy from time to time. Any revision
       will be reflected by an updated Effective Date and
@@ -607,16 +728,16 @@
     </p>
   </section>
 
-  <section id="s20">
-    <h2><span class="num">20.</span> Contact Information</h2>
-    <p>Questions, requests, or concerns regarding this Policy or the handling of your information should be directed to:</p>
+  <section id="s23">
+    <h2><span class="num">23.</span> Contact Information</h2>
+    <p>Questions, requests, grievances, or nominations regarding this Policy or the handling of your information should be directed to:</p>
     <address>
       Arsh Duggal (Developer, DavAI)<br>
       Email: <a href="mailto:davai.pvt.ltd@gmail.com">davai.pvt.ltd@gmail.com</a>
     </address>
   </section>
 
-  <footer>DavAI — Privacy Policy — Version 1.2 — Effective July 17, 2026</footer>
+  <footer>DavAI — Privacy Policy — Version 1.3 — Effective July 19, 2026</footer>
 </div>
 </body>
 </html>
