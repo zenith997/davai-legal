@@ -80,6 +80,24 @@
     </p>
   </section>
 
+  <section id="data-deletion">
+    <h2>Deleting Your Data</h2>
+    <p><strong>Self-service (fastest):</strong> open DavAI, go to Settings,
+    and remove the profile you want to delete. This immediately deletes that
+    profile's medications from your device, and — if it was ever linked to a
+    guardian — deletes its synced copy (medication list, today's dose
+    status, and any registered push tokens) from the server. This works
+    without needing to contact us or wait for a response.</p>
+    <p><strong>By request:</strong> if you'd rather have us do it, or want
+    confirmation a deletion completed, email
+    <a href="mailto:davai.pvt.ltd@gmail.com">davai.pvt.ltd@gmail.com</a> with
+    the pairing code or profile name involved. We'll acknowledge the request
+    and delete the corresponding server-side data.</p>
+    <p>See the <a href="./#s8">Data Storage, Retention, and Deletion</a>
+    section of our Privacy Policy for full details on what's stored where
+    and for how long.</p>
+  </section>
+
   <section>
     <h2>Frequently Asked Questions</h2>
     <p><strong>Why can't I mark a dose as taken?</strong><br>
@@ -87,27 +105,33 @@
     mark a dose taken before its scheduled time. The reminder card shows you
     exactly when it unlocks.</p>
     <p><strong>Where is my data stored?</strong><br>
-    Entirely on your device. DavAI doesn't have user accounts or cloud sync.
+    On your device by default. If you link a guardian, your current
+    medication list and today's dose status also sync to DavAI's server so
+    the guardian's device can show it live and alert them about a missed
+    dose — nothing else syncs, and there's still no account or sign-in.
     See our <a href="./">Privacy Policy</a> for full details.</p>
     <p><strong>How does the Guardian feature work?</strong><br>
-    You can add a profile for someone you're caring for and manage their
-    medications directly from your own phone — that's the device that gets
-    reminders and missed-dose alerts for them. Live syncing between two
-    separate devices (e.g. so a dependent's own phone can notify you) isn't
-    available yet; today the pairing code is a label reserved for that future
-    version.</p>
+    Set up a profile for yourself, then share its pairing code with someone
+    you'd like as a guardian. On their own, separate device, they choose
+    "I'm caring for someone else" and enter that code to get a live,
+    read-only view of your medications and a notification if a dose goes
+    unmarked 30+ minutes past its scheduled time. A guardian can never edit,
+    delete, or mark a dose taken on your profile.</p>
     <p><strong>Why does a "missed dose" alert show up for someone I'm caring for?</strong><br>
-    If a dependent's dose is still unmarked a while after its scheduled time,
-    DavAI logs it in the Guardian tab and sends a notification on your
-    device, since that's where you're tracking their medications.</p>
+    If a dependent's dose is still unmarked 30+ minutes after its scheduled
+    time, DavAI's server detects it and sends a push notification straight
+    to your device — you don't need the app open, and neither does the
+    person you're caring for.</p>
     <p><strong>The AI scanner misread my prescription — what do I do?</strong><br>
     Tap any medication in the review screen to correct the name, form,
-    dosage, frequency, or duration before saving. You can also add
+    dosage, frequency, or duration before saving. Medications the scanner
+    wasn't confident about are flagged with a warning so you know to
+    double-check them against the original prescription. You can also add
     medications manually from the same screen.</p>
-    <p><strong>The scanner says my API key is missing or invalid.</strong><br>
-    Prescription scanning uses your own OpenAI API key, entered in Settings.
-    Double-check the key is correct and has available quota on your OpenAI
-    account. You can always add medications manually instead.</p>
+    <p><strong>Why did scanning fail with a "daily limit reached" message?</strong><br>
+    To keep the scanning service sustainable, each profile can scan up to 5
+    prescriptions per day. The limit resets the next day, or you can add a
+    medication manually in the meantime.</p>
     <p><strong>Notifications aren't showing up.</strong><br>
     Check that notifications are allowed for DavAI in your device's Settings
     app, and that Do Not Disturb / Focus modes aren't silencing them.</p>
