@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DavAI — Medication Reminders & Guardian Alerts</title>
+<meta name="description" content="DavAI is a medication reminder and adherence tracking app for any prescription, with a guardian feature that alerts a caregiver if a dose is missed.">
+<style>
+  :root {
+    --blue: #4338CA;
+    --text: #1E293B;
+    --muted: #535F70;
+    --bg: #F8FAFC;
+    --card: #FFFFFF;
+    --border: #E2E8F0;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  header {
+    margin-bottom: 32px;
+  }
+  header .logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #0061A4, #004A7D);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  header .logo svg {
+    width: 28px;
+    height: 28px;
+  }
+  header h1 {
+    font-size: 30px;
+    margin: 0 0 10px;
+    color: var(--blue);
+  }
+  header p.tagline {
+    color: var(--muted);
+    font-size: 16px;
+    margin: 0;
+  }
+  section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 18px;
+    color: var(--blue);
+    margin: 0 0 12px;
+  }
+  p { margin: 0 0 12px; }
+  p:last-child { margin-bottom: 0; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  li:last-child { margin-bottom: 0; }
+  a { color: var(--blue); }
+  .links {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+  footer {
+    margin-top: 32px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --text: #E2E8F0;
+      --muted: #94A3B8;
+      --bg: #0F172A;
+      --card: #1E293B;
+      --border: #334155;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="7" y="2" width="10" height="20" rx="5" fill="white"/>
+        <path d="M7 12h10" stroke="#0061A4" stroke-width="2"/>
+      </svg>
+    </div>
+    <h1>DavAI</h1>
+    <p class="tagline">Medication reminders and adherence tracking for any prescription — with a guardian who's alerted if a dose is missed.</p>
+  </header>
+
+  <section>
+    <h2>What DavAI does</h2>
+    <p>
+      DavAI helps people track and remember their medications — tablets, capsules, syrups,
+      injections, drops, inhalers, creams, patches, and more — across every medical specialty,
+      not just one. Prescriptions can be scanned with AI or entered manually, and reminders are
+      scheduled automatically so nothing gets missed.
+    </p>
+    <p>
+      Its guardian feature lets a family member or caregiver link to someone else's medication
+      schedule with a simple pairing code, getting a live read-only view and a notification if a
+      dose goes unmarked 30 or more minutes past its scheduled time — without either person
+      needing an account or sign-in.
+    </p>
+  </section>
+
+  <section>
+    <h2>The company</h2>
+    <p>
+      DavAI is developed and operated by Arsh Duggal, building tools focused on medication
+      adherence and caregiving support.
+    </p>
+    <p>Contact: <a href="mailto:davai.pvt.ltd@gmail.com">davai.pvt.ltd@gmail.com</a></p>
+  </section>
+
+  <section>
+    <h2>Links</h2>
+    <div class="links">
+      <a href="./">Privacy Policy</a>
+      <a href="./support.html">Support</a>
+      <a href="mailto:davai.pvt.ltd@gmail.com">Contact</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Arsh Duggal. DavAI is a reminder and tracking tool, not a medical device.
+  </footer>
+</div>
+</body>
+</html>
